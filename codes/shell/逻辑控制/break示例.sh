@@ -9,6 +9,7 @@ while [[ ${i} -lt 10 ]]; do
 		break;
 	fi
 	#i=`expr ${i} + 1`
-  i=$((i+1))    #i=$(($i+1))
+  i=$((i+1))
+  #i=$(($i+1))
 done
 # Output: 6
