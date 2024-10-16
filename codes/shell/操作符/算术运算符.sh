@@ -1,3 +1,5 @@
+###：expr 命令
+
 #!/usr/bin/env bash
 
 x=10
@@ -53,3 +55,72 @@ fi
 #  30 / 10 = 3
 #  30 % 10 = 0
 #  10 不等于 30
+
+
+###：使用双括号 (( ))
+#!/bin/bash
+
+x=10
+if [[ -n $1 ]]; then
+	x=$1
+fi
+
+y=20
+if [[ -n $2 ]]; then
+	y=$2
+fi
+
+result=$(($x + $y));echo "$result"
+result=$(($x - $y));echo "$result"
+result=$(($x * $y));echo "$result"
+result=$(($x / $y));echo "$result"
+result=$(($x % $y));echo "$result"
+
+
+
+###：使用 bc 命令,可以处理浮点运算;
+#!/bin/bash
+
+x=10
+if [[ -n $1 ]]; then
+	x=$1
+fi
+
+y=20
+if [[ -n $2 ]]; then
+	y=$2
+fi
+
+result=$(echo "$x + $y" | bc);echo "$result"
+result=$(echo "$x - $y" | bc);echo "$result"
+result=$(echo "$x * $y" | bc);echo "$result"
+result=$(echo "$x / $y" | bc);echo "$result"
+result=$(echo "$x % $y" | bc);echo "$result"
+
+###：使用 let 命令
+#!/bin/bash
+
+x=10
+if [[ -n $1 ]]; then
+	x=$1
+fi
+
+y=20
+if [[ -n $2 ]]; then
+	y=$2
+fi
+
+let result=$x+$y; echo "$result"  #注意：$x+$y，在算术运算符左右，不能出现空格，否则会出错；
+let result=$x-$y; echo "$result"
+let result=$x*$y; echo "$result"
+let result=$x/$y; echo "$result"
+let result=$x%$y; echo "$result"
+
+
+
+
+
+
+
+
+
