@@ -11,7 +11,7 @@ gawk 'BEGIN {testing="This is a test";  print testing; testing=45;  print testin
 
 #处理数字值
 
-gawk 'BEGIN{x=4; x= x*2+3; printx}'
+gawk 'BEGIN{x=4; x= x*2+3; print x}'
 
 #处理数组
 gawk 'BEGIN{capital["Ill"] = "SprintField"; print capital["Ill"]}'
