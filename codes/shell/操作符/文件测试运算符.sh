@@ -46,3 +46,12 @@ fi
 #  /etc/hosts 文件不是个目录
 #  /etc/hosts 文件不为空
 #  /etc/hosts 文件存在
+
+#notes:
+#  -r /etc/hosts 文件是否可读
+#  -w /etc/hosts 文件是否可写
+#  -x /etc/hosts 文件是否可执行
+#  -f /etc/hosts 文件是否为普通文件
+#  -d /etc/hosts 文件是否为目录
+#  -s /etc/hosts 文件是否为空
+#  -e /etc/hosts 文件是否存在
