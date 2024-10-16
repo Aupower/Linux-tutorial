@@ -45,8 +45,17 @@ fi
 
 #  Output:
 #  x=abc, y=xyz
+#  abc = xyz: x 不等于 y
+#  abc != xyz : x 不等于 y
+#  -z abc : 字符串长度不为 0
+#  -n abc : 字符串长度不为 0
+#  abc : 字符串不为空
+
+#notes:
+#  x=abc, y=xyz
 #  abc = xyz: x 等于 y
 #  abc != xyz : x 不等于 y
 #  -z abc : 字符串长度不为 0，如果字符串的长度为零（即字符串为空），则测试为真；
 #  -n abc : 字符串长度不为 0，如果字符串的长度大于零（即字符串不为空），则测试为真；
 #  abc : 字符串不为空
+
